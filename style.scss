@@ -110,7 +110,7 @@ h2{
     img {
         width: 400px;
         height: 400px;
-        max-width: 400px; // Tamaño uniforme
+        max-width: 400px; 
         border-radius: 0.5rem;
         transition: transform 0.3s ease;
     }
@@ -126,10 +126,10 @@ h2{
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
-         } // Espacio entre las imágenes
+        } 
     
         .col-md-6 {
-            flex: 1 1 calc(50% - 1rem); // Cada columna ocupa el 50% del espacio con margen
+            flex: 1 1 calc(50% - 1rem); 
             text-align: center;
         }
 }
