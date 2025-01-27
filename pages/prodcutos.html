@@ -10,278 +10,322 @@
     <!--CSS-->
     <link rel="stylesheet" href="../style.css">
     <title>El viejo manzo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <h1>El viejo manzano</h1>
-    <!-- barra de navegacion-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" !important;>
-        <div class="container-fluid">
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link active bg-success" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active bg-success" aria-current="page" href="./Nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active bg-success" aria-current="page"
-                            href="./paisajismo.html">Paisajismo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active bg-success" aria-current="page" href="./prodcutos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active bg-success" aria-current="page" href="./contactos.html">Contacto</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-            </div>
+    <!--logo-->
+    <div class="contenedor">
+        <div class="menu-logo">
+            <img src="../multimedia/manzano logo.png" alt="Imagen de manzano">
+            <span>El viejo Manzano</span>
         </div>
-    </nav>
-
-    <h1 class="text-center py-5">Servios</h1>
-
-    <!--servicios-->
-    <div class="services-container">
-        <div class="card" style="width: 18rem;">
-            <img src="../multimedia/hojitas.png" class="card-img-top" alt="Asesoramiento">
-            <div class="card-body">
-                <h5 class="card-title">Asesoramiento parques y jardínes</h5>
-                <p class="card-text">Realizamos el asesoramiento sin cargo para su parque y jardín en cualquier lugar
-                    del país. Se solicita al cliente datos específicos de su parque y necesidades de plantado, para
-                    poder orientarlo. En el caso de realizar el asesoramiento in situ, el mismo tiene costo.</p>
-                <a href="../pages/contactos.html" class="btn btn-primary stretched-link">Consultar</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="../multimedia/estudio.png" class="card-img-top" alt="Capacitación">
-            <div class="card-body">
-                <h5 class="card-title">Capacitación presencial: cursos, talleres y charlas.</h5>
-                <p class="card-text"> Vení a aprender con nosotros de qué manera mejorar tus plantas, árboles, jardínes y parques. Capacitate en nuestos cursos online y aprende como solucionar tus problemas de plagas y mucho más.</p>
-                <a href="../pages/contactos.html" class="btn btn-primary stretched-link">Consultar</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img src="../multimedia/block notas.png" class="card-img-top" alt="Presupuesto">
-            <div class="card-body">
-                <h5 class="card-title">Presupuesto sin cargo</h5>
-                <p class="card-text">Comunicate con nosotros para conseguir una cotización personalizada según requerimiento del cliente, para obtener un resultado optimo y deseado, sin cargo.</p>
-                <a href="../pages/contactos.html" class="btn btn-primary stretched-link">Consultar</a>
-            </div>
-        </div>
-    </div>
-
-    <h2>Productos</h2>
-    <!--Carrito de compras-->
-    <section class="py-5">
-        <div class="container px-4 px-lg-5 my-5">
-            <!-- Producto 1 -->
-            <div class="row gx-4 gx-lg-5 align-items-center my-4">
-                <div class="col-md-6">
-                    <img class="card-img-top mb-5 mb-md-0" src="../multimedia/Cesped bahiana.jpeg" alt="Trama bahiana">
+        <!-- barra de navegacion-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" !important;>
+            <div class="container-fluid">
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
+                    <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active bg-success" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active bg-success" aria-current="page"
+                                href="./Nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active bg-success" aria-current="page"
+                                href="./paisajismo.html">Paisajismo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active bg-success" aria-current="page"
+                                href="./prodcutos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active bg-success" aria-current="page"
+                                href="./contactos.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-6">
-                    <h4 class="display-5 fw-bolder">Trama Bahiana</h4>
-                    <div class="mb-5">
-                        <span>$45000</span>
-                    </div>
-                    <p class="lead">Pan de césped trama bahiana, más grueso, utilizado enclima frío.</p>
-                    <div class="d-flex">
-                        <input class="form-control text-center me-3" type="number" value="1" style="max-width: 3rem;">
-                        <button class="btn btn-outline-success flex-shrink-0" type="button">
-                            <i class="bi bi-basket"></i>
-                            Añadir al carrito
-                        </button>
-                    </div>
+            </div>
+        </nav>
+
+        <h1 class="text-center py-5">Servios</h1>
+
+        <!--servicios-->
+        <div class="services-container">
+            <div class="card" style="width: 18rem;">
+                <img src="../multimedia/hojitas.png" class="card-img-top" alt="Asesoramiento">
+                <div class="card-body">
+                    <h5 class="card-title">Asesoramiento parques y jardínes</h5>
+                    <p class="card-text">Realizamos el asesoramiento sin cargo para su parque y jardín en cualquier
+                        lugar
+                        del país. Se solicita al cliente datos específicos de su parque y necesidades de plantado, para
+                        poder orientarlo. En el caso de realizar el asesoramiento in situ, el mismo tiene costo.</p>
+                    <a href="../pages/contactos.html" class="btn btn-primary stretched-link">Consultar</a>
                 </div>
             </div>
 
-            <!-- Producto 2 -->
-            <div class="row gx-4 gx-lg-5 align-items-center my-4">
-                <div class="col-md-6">
-                    <img class="card-img-top mb-5 mb-md-0" src="../multimedia/Cesped bermuda.jpeg" alt="Grama Bermuda">
-                </div>
-                <div class="col-md-6">
-                    <h4 class="display-5 fw-bolder">Grama Bermuda</h4>
-                    <div class="mb-5">
-                        <span>$32500</span>
-                    </div>
-                    <p class="lead">Grama fina, es un césped muy utilizado en climas cálidos.</p>
-                    <div class="d-flex">
-                        <input class="form-control text-center me-3" type="number" value="1" style="max-width: 3rem;">
-                        <button class="btn btn-outline-success flex-shrink-0" type="button">
-                            <i class="bi bi-basket"></i>
-                            Añadir al carrito
-                        </button>
-                    </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../multimedia/estudio.png" class="card-img-top" alt="Capacitación">
+                <div class="card-body">
+                    <h5 class="card-title">Capacitación presencial: cursos, talleres y charlas.</h5>
+                    <p class="card-text"> Vení a aprender con nosotros de qué manera mejorar tus plantas, árboles,
+                        jardínes y parques. Capacitate en nuestos cursos online y aprende como solucionar tus problemas
+                        de plagas y mucho más.</p>
+                    <a href="../pages/contactos.html" class="btn btn-primary stretched-link">Consultar</a>
                 </div>
             </div>
 
-            <!-- Producto 3 -->
-            <div class="row gx-4 gx-lg-5 align-items-center my-4">
-                <div class="col-md-6">
-                    <img class="card-img-top mb-5 mb-md-0" src="../multimedia/ray grass.jpeg" alt="Ray-grass Ingles">
-                </div>
-                <div class="col-md-6">
-                    <h4 class="display-5 fw-bolder">Ray-grass Inglés</h4>
-                    <div class="mb-5">
-                        <span>$38000</span>
-                    </div>
-                    <p class="lead">Resistente a las pisadas y de crecimiento rápido, no apto para los espacios de
-                        sombra.</p>
-                    <div class="d-flex">
-                        <input class="form-control text-center me-3" type="number" value="1" style="max-width: 3rem;">
-                        <button class="btn btn-outline-success flex-shrink-0" type="button">
-                            <i class="bi bi-basket"></i>
-                            Añadir al carrito
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Producto 4 -->
-            <div class="row gx-4 gx-lg-5 align-items-center my-4">
-                <div class="col-md-6">
-                    <img class="card-img-top mb-5 mb-md-0" src="../multimedia/cesped gramon.jpeg" alt="Gramon">
-                </div>
-                <div class="col-md-6">
-                    <h4 class="display-5 fw-bolder">Gramón</h4>
-                    <div class="mb-5">
-                        <span>$28000</span>
-                    </div>
-                    <p class="lead">Césped que se adapta a climas cálidos.</p>
-                    <div class="d-flex">
-                        <input class="form-control text-center me-3" type="number" value="1" style="max-width: 3rem;">
-                        <button class="btn btn-outline-success flex-shrink-0" type="button">
-                            <i class="bi bi-basket"></i>
-                            Añadir al carrito
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Producto 5 -->
-            <div class="row gx-4 gx-lg-5 align-items-center my-4">
-                <div class="col-md-6">
-                    <img class="card-img-top mb-5 mb-md-0" src="../multimedia/Zoysia Japónica.jpeg"
-                        alt="Zoica Japonica">
-                </div>
-                <div class="col-md-6">
-                    <h4 class="display-5 fw-bolder">Zoica Japónica</h4>
-                    <div class="mb-5">
-                        <span>$32000</span>
-                    </div>
-                    <p class="lead">Es un césped que se adapta a climas cálidos.</p>
-                    <div class="d-flex">
-                        <input class="form-control text-center me-3" type="number" value="1" style="max-width: 3rem;">
-                        <button class="btn btn-outline-success flex-shrink-0" type="button">
-                            <i class="bi bi-basket"></i>
-                            Añadir al carrito
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Producto 6 -->
-            <div class="row gx-4 gx-lg-5 align-items-center my-4">
-                <div class="col-md-6">
-                    <img class="card-img-top mb-5 mb-md-0" src="../multimedia/jardineria 1.jpg" alt="Set de jardinería">
-                </div>
-                <div class="col-md-6">
-                    <h4 class="display-5 fw-bolder">Set de jardinería</h4>
-                    <div class="mb-5">
-                        <span>$12500</span>
-                    </div>
-                    <p class="lead">Set x 3 en jardinería, rastrillo y 2 palas diferente medida.</p>
-                    <div class="d-flex">
-                        <input class="form-control text-center me-3" type="number" value="1" style="max-width: 3rem;">
-                        <button class="btn btn-outline-success flex-shrink-0" type="button">
-                            <i class="bi bi-basket"></i>
-                            Añadir al carrito
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Producto 7 -->
-            <div class="row gx-4 gx-lg-5 align-items-center my-4">
-                <div class="col-md-6">
-                    <img class="card-img-top mb-5 mb-md-0" src="../multimedia/tierra abonada.jpg" alt="Tierra abonada">
-                </div>
-                <div class="col-md-6">
-                    <h4 class="display-5 fw-bolder">Tierra Fértil</h4>
-                    <div class="mb-5">
-                        <span>$18000</span>
-                    </div>
-                    <p class="lead">Tierra Fértil Roots Landiner x40Lts.</p>
-                    <div class="d-flex">
-                        <input class="form-control text-center me-3" type="number" value="1" style="max-width: 3rem;">
-                        <button class="btn btn-outline-success flex-shrink-0" type="button">
-                            <i class="bi bi-basket"></i>
-                            Añadir al carrito
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Producto 8 -->
-            <div class="row gx-4 gx-lg-5 align-items-center my-4">
-                <div class="col-md-6">
-                    <img class="card-img-top mb-5 mb-md-0" src="../multimedia/pulverizador para fumigar.jpg"
-                        alt="Fumigador">
-                </div>
-                <div class="col-md-6">
-                    <h4 class="display-5 fw-bolder">Fumigador con bomba</h4>
-                    <div class="mb-5">
-                        <span>$15000</span>
-                    </div>
-                    <p class="lead">Fumigador con bomba, pico con gatillo, 10 Lts.</p>
-                    <div class="d-flex">
-                        <input class="form-control text-center me-3" type="number" value="1" style="max-width: 3rem;">
-                        <button class="btn btn-outline-success flex-shrink-0" type="button">
-                            <i class="bi bi-basket"></i>
-                            Añadir al carrito
-                        </button>
-                    </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../multimedia/block notas.png" class="card-img-top" alt="Presupuesto">
+                <div class="card-body">
+                    <h5 class="card-title">Presupuesto sin cargo</h5>
+                    <p class="card-text">Comunicate con nosotros para conseguir una cotización personalizada según
+                        requerimiento del cliente, para obtener un resultado optimo y deseado, sin cargo.</p>
+                    <a href="../pages/contactos.html" class="btn btn-primary stretched-link">Consultar</a>
                 </div>
             </div>
         </div>
-    </section>
+
+        <h2>Productos</h2>
+        <!--Carrito de compras-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <!-- Producto 1 -->
+                <div class="row gx-4 gx-lg-5 align-items-center my-4">
+                    <div class="col-md-6">
+                        <img class="card-img-top mb-5 mb-md-0" src="../multimedia/Cesped bahiana.jpeg"
+                            alt="Trama bahiana">
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="display-5 fw-bolder">Trama Bahiana</h4>
+                        <div class="mb-5">
+                            <span>$45000</span>
+                        </div>
+                        <p class="lead">Pan de césped trama bahiana, más grueso, utilizado enclima frío.</p>
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" type="number" value="1"
+                                style="max-width: 3rem;">
+                            <button class="btn btn-outline-success flex-shrink-0" type="button">
+                                <i class="bi bi-basket"></i>
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="row gx-4 gx-lg-5 align-items-center my-4">
+                    <div class="col-md-6">
+                        <img class="card-img-top mb-5 mb-md-0" src="../multimedia/Cesped bermuda.jpeg"
+                            alt="Grama Bermuda">
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="display-5 fw-bolder">Grama Bermuda</h4>
+                        <div class="mb-5">
+                            <span>$32500</span>
+                        </div>
+                        <p class="lead">Grama fina, es un césped muy utilizado en climas cálidos.</p>
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" type="number" value="1"
+                                style="max-width: 3rem;">
+                            <button class="btn btn-outline-success flex-shrink-0" type="button">
+                                <i class="bi bi-basket"></i>
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="row gx-4 gx-lg-5 align-items-center my-4">
+                    <div class="col-md-6">
+                        <img class="card-img-top mb-5 mb-md-0" src="../multimedia/ray grass.jpeg"
+                            alt="Ray-grass Ingles">
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="display-5 fw-bolder">Ray-grass Inglés</h4>
+                        <div class="mb-5">
+                            <span>$38000</span>
+                        </div>
+                        <p class="lead">Resistente a las pisadas y de crecimiento rápido, no apto para los espacios de
+                            sombra.</p>
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" type="number" value="1"
+                                style="max-width: 3rem;">
+                            <button class="btn btn-outline-success flex-shrink-0" type="button">
+                                <i class="bi bi-basket"></i>
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="row gx-4 gx-lg-5 align-items-center my-4">
+                    <div class="col-md-6">
+                        <img class="card-img-top mb-5 mb-md-0" src="../multimedia/cesped gramon.jpeg" alt="Gramon">
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="display-5 fw-bolder">Gramón</h4>
+                        <div class="mb-5">
+                            <span>$28000</span>
+                        </div>
+                        <p class="lead">Césped que se adapta a climas cálidos.</p>
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" type="number" value="1"
+                                style="max-width: 3rem;">
+                            <button class="btn btn-outline-success flex-shrink-0" type="button">
+                                <i class="bi bi-basket"></i>
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="row gx-4 gx-lg-5 align-items-center my-4">
+                    <div class="col-md-6">
+                        <img class="card-img-top mb-5 mb-md-0" src="../multimedia/Zoysia Japónica.jpeg"
+                            alt="Zoica Japonica">
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="display-5 fw-bolder">Zoica Japónica</h4>
+                        <div class="mb-5">
+                            <span>$32000</span>
+                        </div>
+                        <p class="lead">Es un césped que se adapta a climas cálidos.</p>
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" type="number" value="1"
+                                style="max-width: 3rem;">
+                            <button class="btn btn-outline-success flex-shrink-0" type="button">
+                                <i class="bi bi-basket"></i>
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="row gx-4 gx-lg-5 align-items-center my-4">
+                    <div class="col-md-6">
+                        <img class="card-img-top mb-5 mb-md-0" src="../multimedia/jardineria 1.jpg"
+                            alt="Set de jardinería">
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="display-5 fw-bolder">Set de jardinería</h4>
+                        <div class="mb-5">
+                            <span>$12500</span>
+                        </div>
+                        <p class="lead">Set x 3 en jardinería, rastrillo y 2 palas diferente medida.</p>
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" type="number" value="1"
+                                style="max-width: 3rem;">
+                            <button class="btn btn-outline-success flex-shrink-0" type="button">
+                                <i class="bi bi-basket"></i>
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 7 -->
+                <div class="row gx-4 gx-lg-5 align-items-center my-4">
+                    <div class="col-md-6">
+                        <img class="card-img-top mb-5 mb-md-0" src="../multimedia/tierra abonada.jpg"
+                            alt="Tierra abonada">
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="display-5 fw-bolder">Tierra Fértil</h4>
+                        <div class="mb-5">
+                            <span>$18000</span>
+                        </div>
+                        <p class="lead">Tierra Fértil Roots Landiner x40Lts.</p>
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" type="number" value="1"
+                                style="max-width: 3rem;">
+                            <button class="btn btn-outline-success flex-shrink-0" type="button">
+                                <i class="bi bi-basket"></i>
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 8 -->
+                <div class="row gx-4 gx-lg-5 align-items-center my-4">
+                    <div class="col-md-6">
+                        <img class="card-img-top mb-5 mb-md-0" src="../multimedia/pulverizador para fumigar.jpg"
+                            alt="Fumigador">
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="display-5 fw-bolder">Fumigador con bomba</h4>
+                        <div class="mb-5">
+                            <span>$15000</span>
+                        </div>
+                        <p class="lead">Fumigador con bomba, pico con gatillo, 10 Lts.</p>
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" type="number" value="1"
+                                style="max-width: 3rem;">
+                            <button class="btn btn-outline-success flex-shrink-0" type="button">
+                                <i class="bi bi-basket"></i>
+                                Añadir al carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
 
 
+        <!-- Footer -->
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="../multimedia/manzano logo.png" alt="manzano loco">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, cumque.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, cumque.</p>
+                </div>
+                <div class="box text-center">
+                    <h2>SIGUENOS</h2>
+                    <div class="redsocial">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy;2025 <b>El viejo Manzano</b> -Todos los Derechos Resevados.</small>
+            </div>
+
+        </footer>
 
 
 
-    <!-- Footer -->
-    <footer class="text-center py-4">
-        <p>&copy; 2024 | Todos los derechos reservados.</p>
-    </footer>
 
+        <!-- Vincula el archivo de Bootstrap  -->
 
-
-
-
-
-
-    <!-- Vincula el archivo de Bootstrap  -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 
 </body>
 
