@@ -133,3 +133,21 @@ h2{
             text-align: center;
         }
 }
+
+
+ // Responsivo
+@media (max-width: 768px) {
+    .cart-item {
+    grid-template-columns: 80px 1fr;
+
+    .product-quantity,
+    .product-actions {
+        justify-self: end;
+    }
+    }
+
+    img {
+    width: 80px;
+    height: 80px;
+    }
+}
