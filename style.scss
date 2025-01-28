@@ -135,23 +135,6 @@ h2{
 }
 
 
- // Responsivo
-@media (max-width: 768px) {
-    .cart-item {
-    grid-template-columns: 80px 1fr;
-
-    .product-quantity,
-    .product-actions {
-        justify-self: end;
-    }
-    }
-
-    img {
-    width: 80px;
-    height: 80px;
-    }
-}
-
 /*pie de pagina*/
 .pie-pagina{
     width: 100%;
@@ -163,4 +146,25 @@ h2{
     width: 100%;
     max-width: 1200px;
     margin: auto;
+}
+
+
+
+ // Responsivo
+@media (max-width: 768px) {
+
+    .cart-item {
+    grid-template-columns: 80px 1fr;
+    flex: 1 1 100%;
+
+    .product-quantity,
+    .product-actions {
+        justify-self: end;
+    }
+    }
+
+    img {
+    width: 80px;
+    height: 80px;
+    }
 }

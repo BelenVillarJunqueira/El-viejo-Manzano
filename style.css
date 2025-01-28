@@ -197,24 +197,4 @@ width: 250px;
   font-size: 15px;
 }
 
-
-
-/*/ Responsivo*/
-@media (max-width: 768px) {
-  .cart-item {
-  grid-template-columns: 80px 1fr;
-
-  .product-quantity,
-  .product-actions {
-      justify-self: end;
-  }
-  }
-
-  img {
-  width: 80px;
-  height: 80px;
-  }
-}
-
-
 /*# sourceMappingURL=style.css.map */
