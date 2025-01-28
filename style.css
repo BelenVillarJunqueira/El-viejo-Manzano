@@ -1,21 +1,4 @@
 @charset "UTF-8";
-
-.imgMenu {
-  width: 100px
-} 
-
-.menu-logo img {
-  width: 100px; 
-  height: auto; 
-  
-}
-
-.menu-logo span {
-  font-size: 20px; 
-  font-weight: bold; 
-  color: #333; 
-}
-
 h1 {
   text-align: center;
   margin-bottom: 20px;
@@ -28,6 +11,23 @@ h2 {
   margin-bottom: 20px;
   font-size: 3rem;
   color: #222;
+}
+
+.menu-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.menu-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-logo span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
 }
 
 .container {
@@ -46,6 +46,7 @@ h2 {
   max-width: 200px;
   height: auto;
   margin: 0 auto;
+  -o-object-fit: contain;
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -70,7 +71,7 @@ h2 {
   width: 18rem;
   border: 1px solid #ddd;
   border-radius: 0.5rem;
-  background-color: #20c95881;
+  background-color: rgba(31, 165, 120, 0.2588235294);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
@@ -83,6 +84,7 @@ h2 {
 .card-img-top {
   width: 100%;
   height: 200px;
+  -o-object-fit: cover;
   object-fit: cover;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -90,9 +92,9 @@ h2 {
 
 /*pagina paisajismo*/
 .paisajismo img {
-  width: 400px;
-  height: 400;
+  width: 100%;
   max-width: 400px;
+  height: auto;
   border-radius: 0.5rem;
 }
 .paisajismo .container {
@@ -111,9 +113,9 @@ h2 {
 }
 
 .bloque img {
-  width: 400px;
-  height: 400px;
+  width: 100%;
   max-width: 400px;
+  height: auto;
   border-radius: 0.5rem;
   transition: transform 0.3s ease;
 }
@@ -132,48 +134,46 @@ h2 {
   text-align: center;
 }
 
-
-  /*pie de pagina*/
-.pie-pagina{
+/*pie de pagina*/
+.pie-pagina {
   width: 100%;
-  background-color: #20c95881;
-  
+  background-color: rgba(32, 201, 88, 0.5058823529);
 }
 
-.pie-pagina .grupo-1{
+.pie-pagina .grupo-1 {
   width: 100%;
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   padding: 45px 0px;
 }
 
-.pie-pagina .grupo1 .box figure{
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.pie-pagina img{
-width: 250px;
+.pie-pagina img {
+  width: 100%;
+  height: auto;
 }
 
-.pie-pagina .grupo-1 .box h2{
+.pie-pagina .grupo-1 .box h2 {
   margin-bottom: 25px;
   font-size: 20px;
   text-align: center;
 }
 
-.pie-pagina .grupo-1 .box p{
+.pie-pagina .grupo-1 .box p {
   margin-bottom: 10px;
-
 }
 
-.pie-pagina .grupo-1 .red-social a{
+.pie-pagina .grupo-1 .red-social a {
   display: inline-block;
   text-decoration: none;
   width: 45px;
@@ -185,16 +185,76 @@ width: 250px;
   text-align: center;
 }
 
-.pie-pagina .grupo-2{
+.pie-pagina .grupo-2 {
   background-color: rgba(241, 176, 102, 0.932);
   padding: 15px 10px;
   text-align: center;
   color: rgba(0, 0, 0, 0.932);
-
 }
 
-.pie-pagina .grupo-2 small{
+.pie-pagina .grupo-2 small {
   font-size: 15px;
 }
 
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 768px) {
+  .cart-item {
+    grid-template-columns: 80px 1fr;
+    flex: 1 1 100%;
+  }
+  .cart-item .product-quantity,
+  .cart-item .product-actions {
+    justify-self: end;
+  }
+  img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .paisajismo .col-md-6,
+  .bloque .col-md-6 {
+    flex: 1 1 100%; 
+  }
+  
+  .paisajismo img,
+  .bloque img {
+    max-width: 100%; 
+  }
+  .pie-pagina .grupo-1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .pie-pagina .box {
+    margin: 10px 0;
+  }
+  .pie-pagina .redsocial {
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .paisajismo .container,
+  .bloque .container {
+    padding: 1rem; 
+  }
+  
+  .paisajismo .row,
+  .bloque .row {
+    gap: 0.5rem; 
+  }
+  
+  .pie-pagina {
+    padding: 15px 10px;
+  }
+  
+  .pie-pagina .box h2 {
+    font-size: 1.2rem;
+  }
+  
+  .pie-pagina .box p {
+    font-size: 0.8rem;
+  }
+  
+  .pie-pagina .redsocial {
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

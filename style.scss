@@ -15,6 +15,27 @@ h2{
 }
 
 
+.menu-logo img {
+    width: 100px; 
+    height: auto; 
+    
+}
+
+.menu-logo {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+
+.menu-logo span {
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #333; 
+}
+
+
+
 .container{
     background-color: rgba(241, 176, 102, 0.932);
 }
@@ -146,9 +167,57 @@ h2{
     width: 100%;
     max-width: 1200px;
     margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .pie-pagina img{
+        width: 250px;
+        }
+
+        .pie-pagina .grupo-1 .box h2{
+            margin-bottom: 25px;
+            font-size: 20px;
+            text-align: center;
+}
+
+.pie-pagina .grupo-1 .box p{
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: beige;
+    text-align: center;
 }
 
 
+.pie-pagina .grupo-2{
+    background-color: rgba(241, 176, 102, 0.932);
+    padding: 15px 10px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.932);
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
 
  // Responsivo
 @media (max-width: 768px) {
@@ -166,5 +235,38 @@ h2{
     img {
     width: 80px;
     height: 80px;
+    }
+
+
+    .pie-pagina .grupo-1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pie-pagina .box {
+        margin: 10px 0;
+    }
+
+    .pie-pagina .redsocial {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .pie-pagina {
+        padding: 15px 10px;
+    }
+
+    .pie-pagina .box h2 {
+        font-size: 1.2rem;
+    }
+
+    .pie-pagina .box p {
+        font-size: 0.8rem;
+    }
+
+    .pie-pagina .redsocial {
+        font-size: 1.2rem;
     }
 }
