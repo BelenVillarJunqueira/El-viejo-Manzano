@@ -182,7 +182,8 @@ h2{
     }
 
     .pie-pagina img{
-        width: 250px;
+        width: 100%;
+        height: auto;
         }
 
         .pie-pagina .grupo-1 .box h2{
@@ -237,6 +238,16 @@ h2{
     height: 80px;
     }
 
+    .paisajismo .col-md-6,
+    .bloque .col-md-6 {
+    flex: 1 1 100%; 
+    }
+    
+    .paisajismo img,
+    .bloque img {
+    max-width: 100%; 
+    }
+
 
     .pie-pagina .grupo-1 {
         flex-direction: column;
@@ -254,6 +265,16 @@ h2{
 }
 
 @media (max-width: 480px) {
+    .paisajismo .container,
+    .bloque .container {
+    padding: 1rem; 
+    }
+    
+    .paisajismo .row,
+    .bloque .row {
+    gap: 0.5rem; 
+    }
+    
     .pie-pagina {
         padding: 15px 10px;
     }

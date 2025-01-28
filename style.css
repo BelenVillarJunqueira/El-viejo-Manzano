@@ -1,6 +1,6 @@
 @charset "UTF-8";
 h1 {
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
   font-size: 3rem;
   color: #222;
@@ -47,7 +47,7 @@ h2 {
   height: auto;
   margin: 0 auto;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -85,16 +85,16 @@ h2 {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
 
 /*pagina paisajismo*/
 .paisajismo img {
-  width: 100%;
+  width: 400px;
+  height: 400;
   max-width: 400px;
-  height: auto;
   border-radius: 0.5rem;
 }
 .paisajismo .container {
@@ -113,9 +113,9 @@ h2 {
 }
 
 .bloque img {
-  width: 100%;
+  width: 400px;
+  height: 400px;
   max-width: 400px;
-  height: auto;
   border-radius: 0.5rem;
   transition: transform 0.3s ease;
 }
@@ -209,15 +209,13 @@ h2 {
     width: 80px;
     height: 80px;
   }
-  
   .paisajismo .col-md-6,
   .bloque .col-md-6 {
-    flex: 1 1 100%; 
+    flex: 1 1 100%;
   }
-  
   .paisajismo img,
   .bloque img {
-    max-width: 100%; 
+    max-width: 100%;
   }
   .pie-pagina .grupo-1 {
     flex-direction: column;
@@ -234,26 +232,21 @@ h2 {
 @media (max-width: 480px) {
   .paisajismo .container,
   .bloque .container {
-    padding: 1rem; 
+    padding: 1rem;
   }
-  
   .paisajismo .row,
   .bloque .row {
-    gap: 0.5rem; 
+    gap: 0.5rem;
   }
-  
   .pie-pagina {
     padding: 15px 10px;
   }
-  
   .pie-pagina .box h2 {
     font-size: 1.2rem;
   }
-  
   .pie-pagina .box p {
     font-size: 0.8rem;
   }
-  
   .pie-pagina .redsocial {
     font-size: 1.2rem;
   }
