@@ -1,81 +1,26 @@
 
+$primary-color: rgba(241, 176, 102, 0.932);
+$secondary-color: #20c95881;
+$font-stack: Arial, sans-serif;
+$base-padding: 10px;
 
-h1{
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 3rem;
-    color: #222;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h2{
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 3rem;
-    color: #222;
+@mixin button-style($bg-color) {
+    background-color: $bg-color;
+    color: white;
+    padding: $base-padding * 2;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
-
-.menu-logo img {
-    width: 100px; 
-    height: auto; 
-    
-}
-
-.menu-logo {
-    display: flex; 
-    align-items: center; 
-    gap: 10px; 
-}
-
-
-.menu-logo span {
-    font-size: 20px; 
-    font-weight: bold; 
-    color: #333; 
-}
-
-
-
-.container{
-    background-color: rgba(241, 176, 102, 0.932);
-}
-
-.row{
-    border: solid thin orangered;
-        display: flex;
-        align-items: center;
-        margin-bottom: 2rem;
-}
-.row img{
-    width: 100%;
-    max-width: 200px; 
-    height: auto;
-    margin: 0 auto; 
-    object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-
-&:hover {
-    transform: scale(1.05);
-}
-}
-
-
-
-/* Contenedor de las tarjetas */
-.services-container {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 1.5rem; 
-    padding: 2rem; 
-    background-color: #f8faf99f; 
-}
-
-/* Tarjetas individuales */
-.card {
-    width: 18rem; 
+%card-base {
     border: 1px solid #ddd;
     border-radius: 0.5rem;
     background-color: #1fa57842;
@@ -83,96 +28,121 @@ h2{
     transition: transform 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-5px); 
-}
-
-/* Imágenes de las tarjetas */
-.card-img-top {
-    width: 100%;
-    height: 200px; 
-    object-fit: cover; 
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-}
-
-
-/*pagina paisajismo*/
-
-.paisajismo{
-    img { 
-        width: 400px;
-        height: 400;
-        max-width: 400px; 
-        border-radius: 0.5rem;
+header {
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 3rem;
+        color: #222;
     }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: #222;
+}
+
+.menu-logo {
+    @include flex-center;
+    gap: 10px;
     
-      // Contenedor de las imágenes y estructura
-    .container {
+    img {
+        width: 100px;
+        height: auto;
+    }
+
+    span {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+    }
+}
+
+.container {
+    background-color: $primary-color;
+}
+
+.row {
+    border: solid thin orangered;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    
+    img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
         margin: 0 auto;
-        padding: 2rem;
+        object-fit: contain;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
-    
-        .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem; 
-        }
-    
-        .col-md-6 {
-            flex: 1 1 calc(50% - 1rem); 
-            text-align: center;
-        }
 }
 
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #f8faf99f;
+}
 
-.bloque{
+.card {
+    @extend %card-base;
+    width: 18rem;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.paisajismo, .bloque {
     img {
         width: 400px;
-        height: 400px;
-        max-width: 400px; 
+        max-width: 100%;
         border-radius: 0.5rem;
-        transition: transform 0.3s ease;
     }
     
-      // Contenedor de las imágenes y estructura
     .container {
         margin: 0 auto;
         padding: 2rem;
     }
     
-        .row {
+    .row {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
-        } 
+    }
     
-        .col-md-6 {
-            flex: 1 1 calc(50% - 1rem); 
-            text-align: center;
-        }
+    .col-md-6 {
+        flex: 1 1 calc(50% - 1rem);
+        text-align: center;
+    }
 }
 
-
-/*pie de pagina*/
-.pie-pagina{
+.pie-pagina {
     width: 100%;
-    background-color: #20c95881;
-
-}
-
-.pie-pagina .grupo-1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-}
-
+    background-color: $secondary-color;
+    
+    .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0;
+    
+    }
 .pie-pagina .grupo-1 .box figure{
     width: 100%;
     height: 100%;
@@ -180,114 +150,61 @@ h2{
     justify-content: center;
     align-items: center;
     }
-
-    .pie-pagina img{
+    
+    .pie-pagina .grupo-1 .box figure img{
         width: 100%;
         height: auto;
-        }
-
-        .pie-pagina .grupo-1 .box h2{
-            margin-bottom: 25px;
-            font-size: 20px;
-            text-align: center;
-}
-
-.pie-pagina .grupo-1 .box p{
-    margin-bottom: 10px;
-}
-
-.pie-pagina .grupo-1 .red-social a{
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
-    background-color: beige;
-    text-align: center;
-}
-
-
-.pie-pagina .grupo-2{
-    background-color: rgba(241, 176, 102, 0.932);
-    padding: 15px 10px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.932);
-}
-
-.pie-pagina .grupo-2 small{
-    font-size: 15px;
-}
-
- // Responsivo
-@media (max-width: 768px) {
-
-    .cart-item {
-    grid-template-columns: 80px 1fr;
-    flex: 1 1 100%;
-
-    .product-quantity,
-    .product-actions {
-        justify-self: end;
-    }
-    }
-
-    img {
-    width: 80px;
-    height: 80px;
-    }
-
-    .paisajismo .col-md-6,
-    .bloque .col-md-6 {
-    flex: 1 1 100%; 
     }
     
-    .paisajismo img,
-    .bloque img {
-    max-width: 100%; 
+    .grupo-2 {
+        background-color: $primary-color;
+        padding: 15px 10px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.932);
     }
+    
+    .grupo-2 small {
+        font-size: 15px;
+    }
+}
 
-
-    .pie-pagina .grupo-1 {
+// Responsivo
+@media (max-width: 768px) {
+    .d-flex {
         flex-direction: column;
-        align-items: center;
         text-align: center;
     }
-
-    .pie-pagina .box {
-        margin: 10px 0;
+    
+    img {
+        width: 80%;
+        margin: 0 auto;
     }
-
-    .pie-pagina .redsocial {
-        justify-content: center;
+    
+    .paisajismo .col-md-6, .bloque .col-md-6 {
+        flex: 1 1 100%;
+    }
+    
+    .pie-pagina .grupo-1 {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 }
 
-@media (max-width: 480px) {
-    .paisajismo .container,
-    .bloque .container {
-    padding: 1rem; 
-    }
-    
-    .paisajismo .row,
-    .bloque .row {
-    gap: 0.5rem; 
+@media (max-width: 320px) {
+    .paisajismo .container, .bloque .container {
+        padding: 1rem;
     }
     
     .pie-pagina {
         padding: 15px 10px;
     }
-
-    .pie-pagina .box h2 {
+    
+    .pie-pagina .grupo-1 .box h2 {
         font-size: 1.2rem;
     }
-
-    .pie-pagina .box p {
+    
+    .pie-pagina .grupo-1 .box p {
         font-size: 0.8rem;
     }
-
-    .pie-pagina .redsocial {
-        font-size: 1.2rem;
-    }
 }
+
