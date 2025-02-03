@@ -1,7 +1,7 @@
-
 $primary-color: rgba(241, 176, 102, 0.932);
 $secondary-color: #20c95881;
-$font-stack: Arial, sans-serif;
+$font-stack: Arial,
+sans-serif;
 $base-padding: 10px;
 
 
@@ -29,182 +29,239 @@ $base-padding: 10px;
 }
 
 header {
-    h1 {
+
+    .navbar {
+        width: 100%;
+        padding: 10px 20px;
+
+        .navbar-nav {
+            .nav-link {
+                color: #000;
+                font-weight: bold;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #198754; // Verde Bootstrap
+                }
+            }
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 3rem;
+            color: #222;
+        }
+    }
+    }
+
+    h2 {
         text-align: center;
         margin-bottom: 20px;
         font-size: 3rem;
         color: #222;
     }
-}
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 3rem;
-    color: #222;
-}
+    .menu-logo {
+        @include flex-center;
+        gap: 10px;
 
-.menu-logo {
-    @include flex-center;
-    gap: 10px;
-    
-    img {
-        width: 100px;
-        height: auto;
-    }
+        img {
+            width: 100px;
+            height: auto;
+        }
 
-    span {
-        font-size: 20px;
-        font-weight: bold;
-        color: #333;
-    }
-}
-
-.container {
-    background-color: $primary-color;
-}
-
-.row {
-    border: solid thin orangered;
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-    
-    img {
-        width: 100%;
-        max-width: 200px;
-        height: auto;
-        margin: 0 auto;
-        object-fit: contain;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-
-        &:hover {
-            transform: scale(1.05);
+        span {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
         }
     }
-}
 
-.services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 2rem;
-    background-color: #f8faf99f;
-}
-
-.card {
-    @extend %card-base;
-    width: 18rem;
-
-    &:hover {
-        transform: translateY(-5px);
-    }
-}
-
-.paisajismo, .bloque {
-    img {
-        width: 400px;
-        max-width: 100%;
-        border-radius: 0.5rem;
-    }
-    
     .container {
-        margin: 0 auto;
-        padding: 2rem;
+        background-color: $primary-color;
     }
-    
+
     .row {
+        border: solid thin orangered;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin: 0 auto;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .services-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1rem;
+        gap: 1.5rem;
+        padding: 2rem;
+        background-color: #f8faf99f;
     }
-    
-    .col-md-6 {
-        flex: 1 1 calc(50% - 1rem);
-        text-align: center;
-    }
-}
 
-.pie-pagina {
-    width: 100%;
-    background-color: $secondary-color;
-    
-    .grupo-1 {
-        width: 100%;
+    .card {
+        @extend %card-base;
+        width: 18rem;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+
+    .paisajismo,
+    .bloque {
+        img {
+            width: 400px;
+            max-width: 100%;
+            border-radius: 0.5rem;
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .col-md-6 {
+            flex: 1 1 calc(50% - 1rem);
+            text-align: center;
+        }
+    }
+
+    <style>.contacto-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: flex-start;
         max-width: 1200px;
         margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 50px;
-        padding: 45px 0;
-    
     }
-.pie-pagina .grupo-1 .box figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    .pie-pagina .grupo-1 .box figure img{
-        width: 100%;
-        height: auto;
-    }
-    
-    .grupo-2 {
-        background-color: $primary-color;
-        padding: 15px 10px;
-        text-align: center;
-        color: rgba(0, 0, 0, 0.932);
-    }
-    
-    .grupo-2 small {
-        font-size: 15px;
-    }
-}
 
-// Responsivo
-@media (max-width: 768px) {
-    .d-flex {
-        flex-direction: column;
-        text-align: center;
+    .formulario {
+        flex: 1 1 45%;
+        min-width: 300px;
     }
-    
-    img {
-        width: 80%;
-        margin: 0 auto;
-    }
-    
-    .paisajismo .col-md-6, .bloque .col-md-6 {
-        flex: 1 1 100%;
-    }
-    
-    .pie-pagina .grupo-1 {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-}
 
-@media (max-width: 320px) {
-    .paisajismo .container, .bloque .container {
-        padding: 1rem;
+    .mapa {
+        flex: 1 1 45%;
+        min-width: 300px;
     }
-    
+
+
+
     .pie-pagina {
-        padding: 15px 10px;
-    }
-    
-    .pie-pagina .grupo-1 .box h2 {
-        font-size: 1.2rem;
-    }
-    
-    .pie-pagina .grupo-1 .box p {
-        font-size: 0.8rem;
-    }
-}
+        width: 100%;
+        background-color: $secondary-color;
 
+        .grupo-1 {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 50px;
+            padding: 45px 0;
+
+        }
+
+        .pie-pagina .grupo-1 .box figure {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pie-pagina .grupo-1 .box figure img {
+            width: 100%;
+            height: auto;
+        }
+
+        .grupo-2 {
+            background-color: $primary-color;
+            padding: 15px 10px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.932);
+        }
+
+        .grupo-2 small {
+            font-size: 15px;
+        }
+    }
+
+    // Responsivo
+    @media (max-width: 768px) {
+        .d-flex {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        img {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .paisajismo .col-md-6,
+        .bloque .col-md-6 {
+            flex: 1 1 100%;
+        }
+
+
+        .contacto-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .formulario,
+        .mapa {
+            width: 100%;
+        }
+
+
+
+        .pie-pagina .grupo-1 {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 320px) {
+
+        .paisajismo .container,
+        .bloque .container {
+            padding: 1rem;
+        }
+
+        .pie-pagina {
+            padding: 15px 10px;
+        }
+
+        .pie-pagina .grupo-1 .box h2 {
+            font-size: 1.2rem;
+        }
+
+        .pie-pagina .grupo-1 .box p {
+            font-size: 0.8rem;
+        }
+    }
