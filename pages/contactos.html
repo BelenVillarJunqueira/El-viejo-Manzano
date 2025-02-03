@@ -52,121 +52,115 @@
                 </div>
             </div>
         </nav>
-
-                  <!-- Imagen principal tipo banner -->
-                  <div class="container mb-5 d-flex justify-content-center">
-                    <img src="../multimedia/pansy-1309632_1280.jpg" class="img-fluid w-50" alt="Imagen final de Paisajismo">
-                </div>
-        <!-- Contenedor principal -->
-        <div class="contacto-container">
-            <!-- Formulario de contacto -->
-            <div class="formulario">
-                <h2>Contactate con nosotros</h2>
-                <form class="row g-3">
-                    <div class="col-md-6">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="apellido" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" id="apellido" required>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="input-group">
-                            <span class="input-group-text">Email</span>
-                            <input type="text" class="form-control" id="usuario" required>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="ciudad" class="form-label">Ciudad</label>
-                        <input type="text" class="form-control" id="ciudad" required>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="provincia" class="form-label">Provincia</label>
-                        <select class="form-select" id="provincia" required>
-                            <option selected disabled value="">Buenos Aires</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="codigo-postal" class="form-label">Código postal</label>
-                        <input type="text" class="form-control" id="codigo-postal" required>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="condiciones" required>
-                            <label class="form-check-label" for="condiciones">
-                                Acepto las condiciones.
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <button class="btn btn-primary w-100" type="submit">Enviar formulario</button>
-                    </div>
-                </form>
-            </div>
-
-            <!-- Mapa -->
-            <div class="mapa">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6582.191542281967!2d-58.58500342480226!3d-34.42432236200483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5a2d0ddb9b1%3A0x2c1a974c67cba1e4!2sB1648%20Tigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1737946094680!5m2!1ses-419!2sar"
-                    allowfullscreen="" loading="lazy"></iframe>
+        <!-- Imagen principal tipo banner -->
+        <div class="contacto-imagen">
+            <div class="container">
+                <img src="../multimedia/pansy-1309632_1280.jpg" class="imagen-banner" alt="Imagen final de Paisajismo">
             </div>
         </div>
-
-
-        <a href="https://google.com">Buscanos en google</a>
-
-        </form>
-
-
-
-
-
-
-
-        <!-- Footer -->
-        <footer class="pie-pagina">
-            <div class="grupo-1">
-                <div class="box">
-                    <figure>
-                        <a href="#">
-                            <img src="../multimedia/manzano logo.png" alt="manzano loco">
-                        </a>
-                    </figure>
+        
+        <!-- Contenedor principal con margen -->
+        <div class="contacto-container container">
+            <div class="contacto-container">
+                <!-- Formulario de contacto -->
+                <div class="formulario">
+                    <h2>Contactate con nosotros</h2>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" required>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="input-group">
+                                <span class="input-group-text">Email</span>
+                                <input type="text" class="form-control" id="usuario" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="ciudad" class="form-label">Ciudad</label>
+                            <input type="text" class="form-control" id="ciudad" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="provincia" class="form-label">Provincia</label>
+                            <select class="form-select" id="provincia" required>
+                                <option selected disabled value="">Buenos Aires</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="codigo-postal" class="form-label">Código postal</label>
+                            <input type="text" class="form-control" id="codigo-postal" required>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="condiciones" required>
+                                <label class="form-check-label" for="condiciones">
+                                    Acepto las condiciones.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100" type="submit">Enviar formulario</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="box">
-                    <h2>SOBRE NOSOTROS</h2>
-                    <p>Contamos con amplia variedades de árboles, plantas y árbustos. Estamos ubicados en El Talar,
-                        Tigre.</p>
-                    <p>Envios en 24hs/48hs a todo el pais, pregunta por la cotización a tu localidad.</p>
+
+                <!-- Mapa con margen -->
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6582.191542281967!2d-58.58500342480226!3d-34.42432236200483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5a2d0ddb9b1%3A0x2c1a974c67cba1e4!2sB1648%20Tigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1737946094680!5m2!1ses-419!2sar"
+                        allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="box text-center">
-                    <h2>SIGUENOS</h2>
-                    <div class="redsocial">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-x-twitter"></i>
-                        <i class="fa-brands fa-youtube"></i>
+            </div>
+
+
+            <!-- Footer -->
+            <footer class="pie-pagina">
+                <div class="grupo-1">
+                    <div class="box">
+                        <figure>
+                            <a href="#">
+                                <img src="../multimedia/manzano logo.png" alt="manzano loco">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="box">
+                        <h2>SOBRE NOSOTROS</h2>
+                        <p>Contamos con amplia variedades de árboles, plantas y árbustos. Estamos ubicados en El Talar,
+                            Tigre.</p>
+                        <p>Envios en 24hs/48hs a todo el pais, pregunta por la cotización a tu localidad.</p>
+                    </div>
+                    <div class="box text-center">
+                        <h2>SIGUENOS</h2>
+                        <div class="redsocial">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="grupo-2">
-                <small>&copy;2025 <b>El viejo Manzano</b> -Todos los Derechos Resevados.</small>
-            </div>
+                <div class="grupo-2">
+                    <small>&copy;2025 <b>El viejo Manzano</b> -Todos los Derechos Resevados.</small>
+                </div>
 
-        </footer>
-
+            </footer>
 
 
 
 
 
-        <!-- Vincula el archivo de Bootstrap -->
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
+            <!-- Vincula el archivo de Bootstrap -->
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous">
+            </script>
 
 </body>
 
