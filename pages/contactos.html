@@ -9,6 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../multimedia/manzano logo.png" type="image/x-icon">
     <title>El viejo manzo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -22,99 +23,100 @@
             <img src="../multimedia/manzano logo.png" alt="Imagen de manzano">
             <span>El viejo Manzano</span>
         </div>
-        <!-- barra de navegacion-->
+        <!-- Barra de navegación responsiva -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
-                    <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item">
-                            <a class="nav-link active bg-success" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link active bg-success" href="/index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active bg-success" aria-current="page"
-                                href="./Nosotros.html">Nosotros</a>
+                            <a class="nav-link bg-success" href="../pages/Nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active bg-success" aria-current="page"
-                                href="./paisajismo.html">Paisajismo</a>
+                            <a class="nav-link bg-success" href="../pages/paisajismo.html">Paisajismo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active bg-success" aria-current="page"
-                                href="./prodcutos.html">Productos</a>
+                            <a class="nav-link bg-success" href="../pages/prodcutos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active bg-success" aria-current="page"
-                                href="./contactos.html">Contacto</a>
+                            <a class="nav-link bg-success" href="../pages/contactos.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!--Formulario de registro-->
-        <h2>Contactate con nosotros</h2>
+           <!-- Imagen final tipo banner -->
+           <div class="container mb-5 d-flex justify-content-center">
+            <img src="../multimedia/pansy-1309632_1280.jpg" class="img-fluid w-50" alt="Imagen final de Paisajismo">
+        </div>
 
-        <form class="row g-3">
-            <div class="col-md-4">
-                <label for="validationDefault01" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="validationDefault01" required>
-            </div>
-            <div class="col-md-4">
-                <label for="validationDefault02" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="validationDefault02" required>
-            </div>
-            <div class="col-md-4">
-                <label for="validationDefaultUsername" class="form-label">Usuario</label>
-                <div class="input-group">
-                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                    <input type="text" class="form-control" id="validationDefaultUsername"
-                        aria-describedby="inputGroupPrepend2" required>
+         <!-- Contenedor principal con margen -->
+         <div class="contacto-container container">
+            <div class="contacto-container">
+                <!-- Formulario de contacto -->
+                <div class="formulario">
+                    <h2>Contactate con nosotros</h2>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" required>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="input-group">
+                                <span class="input-group-text">Email</span>
+                                <input type="text" class="form-control" id="usuario" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="ciudad" class="form-label">Ciudad</label>
+                            <input type="text" class="form-control" id="ciudad" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="provincia" class="form-label">Provincia</label>
+                            <select class="form-select" id="provincia" required>
+                                <option selected disabled value="">Buenos Aires</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="codigo-postal" class="form-label">Código postal</label>
+                            <input type="text" class="form-control" id="codigo-postal" required>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="condiciones" required>
+                                <label class="form-check-label" for="condiciones">
+                                    Acepto las condiciones.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100" type="submit">Enviar formulario</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Mapa con margen -->
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6582.191542281967!2d-58.58500342480226!3d-34.42432236200483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5a2d0ddb9b1%3A0x2c1a974c67cba1e4!2sB1648%20Tigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1737946094680!5m2!1ses-419!2sar"
+                        allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-            <div class="col-md-6">
-                <label for="validationDefault03" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" id="validationDefault03" required>
-            </div>
-            <div class="col-md-3">
-                <label for="validationDefault04" class="form-label">Provincia</label>
-                <select class="form-select" id="validationDefault04" required>
-                    <option selected disabled value="">Buenos Aires</option>
-                    <option>...</option>
-                </select>
-            </div>
-            <div class="col-md-3">
-                <label for="validationDefault05" class="form-label">Código postal</label>
-                <input type="text" class="form-control" id="validationDefault05" required>
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                    <label class="form-check-label" for="invalidCheck2">
-                        Acepto las condiciones.
-                    </label>
-                </div>
-            </div>
-            <div class="col-12">
-                <button class="btn btn-primary" type="submit">Enviar formulario</button>
-            </div>
 
 
-            <a href="https://google.com">Buscanos en google</a>
-
-        </form>
-
-
-
-
-
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6582.191542281967!2d-58.58500342480226!3d-34.42432236200483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5a2d0ddb9b1%3A0x2c1a974c67cba1e4!2sB1648%20Tigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1737946094680!5m2!1ses-419!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         <!-- Footer -->
         <footer class="pie-pagina">
