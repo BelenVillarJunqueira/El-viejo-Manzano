@@ -97,7 +97,28 @@ h2 {
   text-align: center;
 }
 
-.pie-pagina {
+.contacto-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.contacto-imagen .container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.imagen-banner {
+  width: 50%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+.pie-pagina img{
   width: 100%;
   background-color: rgba(32, 201, 88, 0.5058823529);
 }
@@ -106,6 +127,7 @@ h2 {
   max-width: 1200px;
   margin: auto;
   display: grid;
+  background-color: rgba(32, 201, 102, 0.656);
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   padding: 45px 0;
