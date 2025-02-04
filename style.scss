@@ -1,7 +1,6 @@
 $primary-color: rgba(241, 176, 102, 0.932);
 $secondary-color: rgba(32, 201, 88, 0.5058823529);
-$font-stack: Arial,
-sans-serif;
+$font-stack: Arial, sans-serif;
 $base-padding: 10px;
 
 
@@ -11,16 +10,18 @@ $base-padding: 10px;
     align-items: center;
 }
 
+$base-padding: 10px;
+
 @mixin button-style($bg-color) {
     background-color: $bg-color;
     color: white;
-    padding: $base-padding * 2;
-    border-radius: 5px;
+    padding: calc($base-padding * 2)
+    border-radius 5px;
     border: none;
     cursor: pointer;
 }
 
-%card-base {
+@mixin card-base {
     border: 1px solid #ddd;
     border-radius: 0.5rem;
     background-color: #1fa57842;
@@ -41,7 +42,7 @@ header {
                 transition: color 0.3s ease;
 
                 &:hover {
-                    color: #198754; 
+                    color: #198754;
                 }
             }
         }
@@ -83,7 +84,7 @@ h2 {
 }
 
 .row {
-    border: solid thin orangered;
+    border: 1px solid orangered;
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
@@ -114,7 +115,7 @@ h2 {
 }
 
 .card {
-    @extend %card-base;
+    @include card-base;
     width: 18rem;
 
     &:hover {
@@ -147,32 +148,32 @@ h2 {
         text-align: center;
     }
 
-}.contacto-container {
-    max-width: 900px; 
-    margin: 0 auto; 
+}
+
+.contacto-container {
+    max-width: 900px;
+    margin: 0 auto;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; 
+    gap: 20px;
     justify-content: center;
 }
 
-.formulario, .mapa {
-    flex: 1 1 100%; 
+.formulario,
+.mapa {
+    flex: 1 1 100%;
     min-width: 300px;
 }
 
 .mapa iframe {
     width: 100%;
-    height: 400%;
-    min-height:400px
+    min-height: 400px;
+ 
 }
-
-
 .pie-pagina {
-    width: 100%;
-    background-color: $secondary-color;
-
+    background-color: darken($secondary-color, 10%);
+    
     .grupo-1 {
         width: 100%;
         max-width: 1200px;
@@ -181,22 +182,6 @@ h2 {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 50px;
         padding: 45px 0;
-
-    }
-
-    .pie-pagina .grupo-1 .box figure {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       background-color: rgba(32, 201, 88, 0.5058823529);
-    }
-
-    .pie-pagina .grupo-1 .box figure img {
-        width: 100%;
-        height: auto;
-        background-color: rgba(32, 201, 88, 0.5058823529)
     }
 
     .grupo-2 {
@@ -204,61 +189,59 @@ h2 {
         padding: 15px 10px;
         text-align: center;
         color: rgba(0, 0, 0, 0.932);
-    }
 
-    .grupo-2 small {
-        font-size: 15px;
-    }
-}
-
-// Responsivo
-@media (max-width: 768px) {
-    .d-flex {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    img {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .paisajismo .col-md-6,
-    .bloque .col-md-6 {
-        flex: 1 1 100%;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-
-        .formulario,
-        .mapa {
-            max-width: 100%;
-            flex: 1 1 100%; 
+        small {
+            font-size: 15px;
         }
     }
-    
-    .pie-pagina .grupo-1 {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
 }
+    // Responsivo
+    @media (max-width: 768px) {
+        .d-flex {
+            flex-direction: column;
+            text-align: center;
+        }
 
-@media (max-width: 320px) {
+        img {
+            width: 80%;
+            margin: 0 auto;
+        }
 
-    .paisajismo .container
-    .bloque .container {
-        padding: 1rem;
+        .paisajismo .col-md-6,
+        .bloque .col-md-6 {
+            flex: 1 1 100%;
+            align-items: center;
+            text-align: center;
+
+            .formulario,
+            .mapa {
+                max-width: 100%;
+                flex: 1 1 100%;
+            }
+        }
+
+        .pie-pagina .grupo-1 {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
     }
 
-    .pie-pagina {
-        padding: 15px 10px;
-    }
+    @media (max-width: 320px) {
 
-    .pie-pagina .grupo-1 .box h2 {
-        font-size: 1.2rem;
-    }
+        .paisajismo .container 
+        .bloque .container {
+            padding: 1rem;
+        }
 
-    .pie-pagina .grupo-1 .box p {
-        font-size: 0.8rem;
+        .pie-pagina {
+            padding: 15px 10px;
+        }
+
+        .pie-pagina .grupo-1 .box h2 {
+            font-size: 1.2rem;
+        }
+
+        .pie-pagina .grupo-1 .box p {
+            font-size: 0.8rem;
+        }
     }
-}
